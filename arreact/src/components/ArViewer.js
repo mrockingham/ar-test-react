@@ -14,15 +14,15 @@ export const ArViewer = () => {
       <a-scene
         vr-mode-ui="enabled: false"
         embedded
-        arjs="sourceType: webcam; debugUIEnabled: false;"
+        arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;;"
       >
         <a-text
           value="This content will always face you."
           look-at="[gps-camera]"
-          scale="50 50 50"
+          scale="2 2 2"
           gps-entity-place="latitude: 29.1724435; longitude: -81.0011331;"
         ></a-text>
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-camera rotation-reader far="2"></a-camera>
       </a-scene>
     </div>
   );
