@@ -11,7 +11,6 @@ export const ArViewer = () => {
   // );
   return (
     <div>
-      Test2
       <a-scene
         vr-mode-ui="enabled: false"
         embedded
