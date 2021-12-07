@@ -11,9 +11,8 @@ export const ArViewer = () => {
       >
         <a-text
           value="Mike is here."
-          scale="0.1 0.1 0.1"
+          scale="50 50 50"
           gps-entity-place="latitude: 29.1724435; longitude: -81.0011331;"
-          animation-mixer
         ></a-text>
         <a-camera gps-camera rotation-reader></a-camera>
       </a-scene>
