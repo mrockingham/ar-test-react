@@ -13,11 +13,12 @@ export const ArViewer = () => {
     <div style={{ margin: '0', overflow: 'hidden' }}>
       <a-scene
         vr-mode-ui="enabled: false"
-        embedded
-        arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;;"
+        // embedded
+        arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
       >
         <a-text
-          value="This content will always face you."
+          value="Mike is here."
+          scale="0.15 0.15 0.15"
           gps-entity-place="latitude: 29.1724435; longitude: -81.0011331;"
         ></a-text>
         <a-camera gps-camera></a-camera>
