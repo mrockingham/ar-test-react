@@ -10,7 +10,7 @@ export const ArViewer = () => {
   //   'https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'
   // );
   return (
-    <div>
+    <div style={{ margin: '0', overflow: 'hidden' }}>
       <a-scene
         vr-mode-ui="enabled: false"
         embedded
