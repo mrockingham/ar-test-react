@@ -7,6 +7,7 @@ export const ArViewer = () => {
       test
       <a-scene
         vr-mode-ui="enabled: false"
+        embedded
         arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
         renderer="antialias: true; alpha: true"
       >
@@ -21,7 +22,10 @@ export const ArViewer = () => {
           material="color: red"
           scale="10 10 10"
         ></a-box>
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera
+          gps-camera="gpsMinDistance: 20; simulateLatitude: 29.1724435; simulateLongitude: -81.0011331;"
+          rotation-reader
+        ></a-camera>
       </a-scene>
     </div>
   );
