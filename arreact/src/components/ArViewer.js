@@ -4,6 +4,7 @@ import useScript from '../hooks/useScript';
 export const ArViewer = () => {
   return (
     <div style={{ margin: '0', overflow: 'hidden' }}>
+      test
       <a-scene
         vr-mode-ui="enabled: false"
         embedded
